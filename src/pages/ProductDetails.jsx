@@ -60,12 +60,12 @@ export const ProductDetails = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-wrap items-center justify-evenly">
-        <div className="px-10">
+      <div className="flex flex-wrap items-center justify-evenly mt-10">
+        <div className="lg:px-10">
           <Link to="/">
-            <p className="mb-20">←Back to Shop</p>
+            <p className="mb-20 ">←Back to Shop</p>
           </Link>
-          <img src="src/assets/des.png" />
+          <img src="src/assets/des.png" className="w-4/5 mx-auto"/>
         </div>
         <div className="flex flex-col ml-3 lg:ml-0">
           <p>Brand:Elegant | Similar Product from Elegant</p>
@@ -77,12 +77,12 @@ export const ProductDetails = () => {
           </p>
           <hr />
 
-          <label for="frame" className="mt-5">
+          <label htmlFor="frame" className="mt-5">
             Lens Width and Frame Size
           </label>
           <select
             id="frame"
-            className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-[#2C3E50] focus:border-[#2C3E50] block lg:w-full p-2.5 h-14 w-4/5"
+            className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-[#2C3E50] focus:border-[#2C3E50] block lg:w-full p-2.5 lg:h-14 w-5/6"
           >
             <option selected>Select Frame Size</option>
             <option>28 mm</option>
@@ -99,7 +99,7 @@ export const ProductDetails = () => {
           </div>
           <p className="text-xl font-bold mt-10">$80.00</p>
           <Link to="/cart">
-            <button className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded w-56 h-10">
+            <button className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded lg:w-56 h-10 w-80 mx-auto">
               Remove Item
             </button>
           </Link>

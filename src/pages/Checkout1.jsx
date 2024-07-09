@@ -63,7 +63,7 @@ export const Checkout1 = () => {
         <hr />
         <div className="flex flex-wrap relative text-[#2C3E50]">
           <p className=" mt-5">Subtotal</p>
-          <p className="mt-5 absolute right-0 ">$266.00</p>
+          <p className="mt-5 absolute right-0 ">$271.00</p>
         </div>
       </div>
       <Link to="/shipping">

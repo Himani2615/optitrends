@@ -36,7 +36,7 @@ export const Cart = () => {
         <h1 className="text-xl font-bold">Cart</h1>
 
         <Link to="/">
-          <button className="btn border-2 border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20">
+          <button className="btn lg:border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20">
             Clear All
           </button>
         </Link>
@@ -51,7 +51,7 @@ export const Cart = () => {
       </p>
       <div className="flex flex-wrap mt-10 mx-auto w-5/6 justify-between">
         <p className=" text-[#2C3E50]">Subtotal</p>
-        <p className=" text-[#2C3E50]">$266.00</p>
+        <p className=" text-[#2C3E50]">$235.00</p>
       </div>
       <Link to="/review">
         <div className="w-5/6 mx-auto">

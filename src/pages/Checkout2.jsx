@@ -9,7 +9,7 @@ export const Checkout2 = () => {
       <Navbar />
       <div className="flex flex-col">
         <Link to="/review">
-          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100">
+          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100 my-2">
             ← Back
           </p>
         </Link>
