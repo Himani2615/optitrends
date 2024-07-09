@@ -60,14 +60,14 @@ export const ProductDetails = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-wrap items-center justify-evenly mt-10">
+      <div className="flex flex-wrap items-center justify-evenly mt-2">
         <div className="lg:px-10">
           <Link to="/">
-            <p className="mb-20 ">←Back to Shop</p>
+            <p className="mb-20">←Back to Shop</p>
           </Link>
           <img src="src/assets/des.png" className="w-4/5 mx-auto"/>
         </div>
-        <div className="flex flex-col ml-3 lg:ml-0">
+        <div className="flex flex-col ml-3 lg:ml-0 lg:mt-20 text-[#121A21]">
           <p>Brand:Elegant | Similar Product from Elegant</p>
           <h1 className="text-xl font-semibold">Modern Metal Frame</h1>
           <p className="mt-5 mb-2">

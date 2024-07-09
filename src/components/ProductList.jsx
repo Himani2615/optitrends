@@ -14,12 +14,12 @@ export const ProductList = ({ product }) => {
             </button>
           </Link>
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap ">
         <div className="flex flex-col text-md w-full lg:w-auto lg:ml-56 ml-5 md:ml-28">
-          <p className="sm:block hidden">
+          <p className="sm:block hidden text-[#121A21]">
             Brand: Elegant | Similar product from Elegant
           </p>
-          <h1 className="text-md lg:text-lg font-semibold mt-1 ">{product.name}</h1>
+          <h1 className="text-md lg:text-lg font-semibold mt-1 text-[#121A21]">{product.name}</h1>
           <div className="flex flex-wrap">
             <p className="lg:mt-10 lg:mb-4 mb-1 mt-3 text-sm">Size</p>
             <p className="lg:ml-20 lg:mt-10 mt-3 lg:mb-1 mb-0.5 ml-2 text-sm">

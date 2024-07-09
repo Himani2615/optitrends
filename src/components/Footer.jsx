@@ -105,19 +105,19 @@ const Footer = () => {
               </h4>
               <ul className="text-sm transition-all duration-500 text-center lg:text-left">
                 <li className="mb-2">
-                  <a href="" className="text-gray-600 hover:text-gray-900">
+                  <div className="text-gray-900">
                     Email: support@OpticTrend.com
-                  </a>
+                  </div>
                 </li>
                 <li className="mb-2">
-                  <a href="" className="text-gray-600 hover:text-gray-900">
+                  <div  className="text-gray-900">
                     Phone: +1-800-123-4567
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="" className="text-gray-600 hover:text-gray-900">
+                  <div className="text-gray-900">
                     Address: 123 Tech Avenue, Silicon Valley, CA
-                  </a>
+                  </div>
                 </li>
               </ul>
               <div className="mt-6 text-center lg:text-left">

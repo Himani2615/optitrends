@@ -31,9 +31,9 @@ export const Cart = () => {
       <Navbar />
       <div className="flex flex-wrap justify-between mx-auto w-5/6">
         <Link to="/">
-          <p className="">← Back</p>
+          <p className="text-[#121A21]">← Back</p>
         </Link>
-        <h1 className="text-xl font-bold">Cart</h1>
+        <h1 className="text-xl font-bold text-[#121A21]">Cart</h1>
 
         <Link to="/">
           <button className="btn lg:border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20">

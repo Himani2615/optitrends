@@ -10,7 +10,7 @@ export const Checkout3 = () => {
 
       <div className="flex flex-col">
         <Link to="/shipping">
-          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100 my-2">
+          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100 my-2 text-[#121A21]">
             ← Back
           </p>
         </Link>

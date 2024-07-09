@@ -31,7 +31,7 @@ export const Checkout1 = () => {
       <Navbar />
       <div className="flex flex-col">
         <Link to="/">
-          <p className="ml-8 lg:ml-24 float-left">← Shop</p>
+          <p className="ml-8 lg:ml-24 float-left text-[#121A21]">← Shop</p>
         </Link>
         <p className="text-center font-bold text-xl text-[#2C3E50]">Checkout</p>
         <img

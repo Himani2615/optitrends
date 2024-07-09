@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/"
-              className="text-gray-900 px-1 pt-1 border-b-2 border-indigo-500 text-md font-medium"
+              className="text-[#34495E] px-1 pt-1 border-b-2 border-[#34495E] text-md font-medium"
             >
               Shop
             </Link>

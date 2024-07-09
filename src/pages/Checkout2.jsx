@@ -9,7 +9,7 @@ export const Checkout2 = () => {
       <Navbar />
       <div className="flex flex-col">
         <Link to="/review">
-          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100 my-2">
+          <p className="ml-8 lg:ml-24 float-left lg:opacity-0 md:opacity-0 opacity-100 my-2 text-[#121A21]">
             ← Back
           </p>
         </Link>
@@ -23,7 +23,7 @@ export const Checkout2 = () => {
         </h1>
       </div>
 
-      <div className="w-full max-w-4xl mx-auto p-8">
+      <div className="w-full max-w-4xl mx-auto p-8 text-[#121A21]">
         <div className="p-8 rounded-lg">
           <form action="/payment">
             <div className="mb-6">
