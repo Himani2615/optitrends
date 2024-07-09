@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ProductCard = ({ product }) => {
   return (
     <div>
-      <div className="group relative border rounded-lg mt-10 overflow-hidden h-96 lg:w-72 lg:p-10 md:w-64 md:p-10 w-38 p-1">
+      <div className="group relative border rounded-lg mt-10 overflow-hidden h-96 lg:w-72 lg:p-10 md:w-64 md:p-10 p-1">
         <div className="lg:group-hover:translate-y-[-50px] transition-transform duration-300">
           <img
             src={product.image}
@@ -21,7 +21,7 @@ export const ProductCard = ({ product }) => {
           </p>
         </div>
         <Link to="/cart">
-          <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 text-white px-0.5 lg:px-4 py-2 rounded opacity-100 lg:opacity-0 lg:group-hover:opacity-100 bg-[#2C3E50]">
+          <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 text-white px-1 lg:px-4 py-2 rounded opacity-100 lg:opacity-0 lg:group-hover:opacity-100 bg-[#2C3E50] w-full md:w-auto mt-0">
             Add to Cart
           </button>
         </Link>

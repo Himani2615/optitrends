@@ -56,7 +56,7 @@ export const Checkout3 = () => {
       </div>
 
       <div className="w-2/3 mx-auto ">
-        <div className="mt-8 items-end float-left ">
+        <div className="mt-10 items-end float-left ">
           <Link to="/shipping">
             <button className="text-[#2C3E50] border border-[#2C3E50] hidden sm:block px-auto py-auto rounded-lg  w-40 h-10">
               ← Back
@@ -64,7 +64,7 @@ export const Checkout3 = () => {
           </Link>
         </div>
         <div className="mt-8 items-end float-right w-full lg:w-40">
-          <Link to="/payment">
+          <Link to="/">
             <button className="bg-[#2C3E50] text-white px-auto py-auto rounded-lg  w-full lg:w-40 md:w-40  h-10  px-1">
               Confirm Payment
             </button>

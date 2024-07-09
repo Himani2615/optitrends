@@ -71,8 +71,12 @@ const Navbar = () => {
                   3
                 </span>
               </Link>
-
+              <Link to="/cart">
               <span className="hidden lg:inline">Cart</span>
+              </Link>
+            
+
+
             </div>
             <button onClick={toggleMenu} className="lg:hidden">
               <IoMdMenu className="text-2xl text-gray-600" />
@@ -91,13 +95,13 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/shop"
+              to="/"
               className="block text-gray-700 hover:bg-gray-200 rounded-md px-3 py-2 text-base font-medium"
             >
               Shop
             </Link>
             <Link
-              to="/features"
+              to="/"
               className="block text-gray-700 hover:bg-gray-200 rounded-md px-3 py-2 text-base font-medium"
             >
               Features

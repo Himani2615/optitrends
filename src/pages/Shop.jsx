@@ -107,7 +107,7 @@ export const Shop = () => {
   return (
     <>
       <Navbar />
-      <div className="container pt-5 p-2">
+      <div className="container pt-5 p-3">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-1">
           {products.map((product) => (
             <Link to="/details">

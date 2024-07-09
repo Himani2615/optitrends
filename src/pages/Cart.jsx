@@ -36,7 +36,7 @@ export const Cart = () => {
         <h1 className="text-xl font-bold text-[#121A21]">Cart</h1>
 
         <Link to="/">
-          <button className="btn lg:border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20">
+          <button className="btn border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20 hidden sm:block">
             Clear All
           </button>
         </Link>
