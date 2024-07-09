@@ -21,7 +21,7 @@ export const ProductCard = ({ product }) => {
           </p>
         </div>
         <Link to="/cart">
-          <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 text-white px-1 lg:px-4 py-2 rounded opacity-100 lg:opacity-0 lg:group-hover:opacity-100 bg-[#2C3E50] w-full md:w-auto mt-0">
+          <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 text-white px-2 lg:px-4 py-2 rounded opacity-100 lg:opacity-0 lg:group-hover:opacity-100 bg-[#2C3E50] w-4/5 mx-auto md:w-auto mt-0">
             Add to Cart
           </button>
         </Link>
