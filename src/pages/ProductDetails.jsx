@@ -10,49 +10,49 @@ export const ProductDetails = () => {
       id: 1,
       name: "Retro Round Frame",
       price: 65,
-      image: "src/assets/retro.png",
+      image: "/assets/retro.png",
     },
     {
       id: 2,
       name: "Sleek Titanium Frame",
       price: 50,
-      image: "src/assets/sleek.png",
+      image: "/assets/sleek.png",
     },
     {
       id: 3,
       name: "Sophisticated Rimlesss",
       price: 90,
-      image: "src/assets/rimless.png",
+      image: "/assets/rimless.png",
     },
     {
       id: 4,
       name: "Modern Metal Frame",
       price: 80,
-      image: "src/assets/modern.png",
+      image: "/assets/modern.png",
     },
     {
       id: 5,
       name: "Sophisticated Rimlesss",
       price: 90,
-      image: "src/assets/rimless.png",
+      image: "/assets/rimless.png",
     },
     {
       id: 6,
       name: "Trendy Tortoise Shell",
       price: 85,
-      image: "src/assets/trendy.png",
+      image: "/assets/trendy.png",
     },
     {
       id: 7,
       name: "Modern Metal Frame",
       price: 80,
-      image: "src/assets/modern.png",
+      image: "/assets/modern.png",
     },
     {
       id: 8,
       name: "Classic Black Frame",
       price: 50,
-      image: "src/assets/classic.png",
+      image: "/assets/classic.png",
     },
   ];
 
@@ -65,7 +65,7 @@ export const ProductDetails = () => {
           <Link to="/">
             <p className="mb-20">←Back to Shop</p>
           </Link>
-          <img src="src/assets/des.png" className="w-4/5 mx-auto"/>
+          <img src="/assets/des.png" className="w-4/5 mx-auto"/>
         </div>
         <div className="flex flex-col ml-3 lg:ml-0 lg:mt-20 text-[#121A21]">
           <p>Brand:Elegant | Similar Product from Elegant</p>

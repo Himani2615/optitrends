@@ -10,19 +10,19 @@ export const Cart = () => {
       id: 1,
       name: "Modern Metal Frame",
       price: 80,
-      image: "src/assets/modern.png",
+      image: "/assets/modern.png",
     },
     {
       id: 2,
       name: "Retro Round Frame",
       price: 65,
-      image: "src/assets/retro.png",
+      image: "/assets/retro.png",
     },
     {
       id: 3,
       name: "Sophisticated Rimless",
       price: 90,
-      image: "src/assets/rimless.png",
+      image: "/assets/rimless.png",
     },
   ];
 

@@ -10,19 +10,19 @@ export const Checkout1 = () => {
       id: 1,
       name: "Modern Metal Frame",
       price: 80,
-      image: "src/assets/modern.png",
+      image: "/assets/modern.png",
     },
     {
       id: 2,
       name: "Retro Round Frame",
       price: 65,
-      image: "src/assets/retro.png",
+      image: "/assets/retro.png",
     },
     {
       id: 3,
       name: "Sophisticated Rimless",
       price: 90,
-      image: "src/assets/rimless.png",
+      image: "/assets/rimless.png",
     },
   ];
 
@@ -35,7 +35,7 @@ export const Checkout1 = () => {
         </Link>
         <p className="text-center font-bold text-xl text-[#2C3E50]">Checkout</p>
         <img
-          src="src/assets/progress1.png"
+          src="/assets/progress1.png"
           className="self-center m-10 mx-auto w-2/3 lg:w-auto"
         />
         <p className="text-center text-lg font-semibold text-[#2C3E50]">

@@ -15,7 +15,7 @@ export const Checkout2 = () => {
         </Link>
         <p className="text-center font-bold text-xl text-[#2C3E50]">Checkout</p>
         <img
-          src="src/assets/progress2.png"
+          src="/assets/progress2.png"
           className="self-center m-10 mx-auto w-2/3 lg:w-auto"
         />
         <h1 className="text-center text-lg text-[#2C3E50] font-semibold">

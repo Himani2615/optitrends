@@ -1,8 +1,4 @@
 import React from "react";
-import fb_icon from "../assets/fb_icon.png";
-import insta_icon from "../assets/ig_icon.png";
-import nintendo_icon from "../assets/nintendo_icon.png";
-import twitter_icon from "../assets/twitter_icon.png";
 
 const Footer = () => {
   return (
@@ -13,7 +9,7 @@ const Footer = () => {
             <div className="w-full text-center mb-8 lg:mb-0 lg:w-auto">
               <a href="#" className="flex justify-center lg:justify-start">
                 <img
-                  src="src/assets/image1.png"
+                  src="/assets/image1.png"
                   alt="Logo"
                   className="mx-auto lg:mx-0"
                 />
@@ -124,16 +120,16 @@ const Footer = () => {
                 <h5>Social Media Links</h5>
                 <div className="flex justify-center lg:justify-start mt-4 space-x-4">
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={fb_icon} />
+                    <img src="/assets/fb_icon.png" />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={insta_icon} />
+                   <img src="/assets/ig_icon.png" />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={nintendo_icon} />
+                    <img src="/assets/nintendo_icon.png" />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={twitter_icon} />
+                    <img src="/assets/twitter_icon.png" />
                   </a>
                 </div>
               </div>

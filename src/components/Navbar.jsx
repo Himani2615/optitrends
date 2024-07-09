@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/image1.png";
-import cart_icon from "../assets/shopping-cart.png";
-import user from "../assets/user-check.png";
 import { IoMdSearch, IoMdMenu } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +19,7 @@ const Navbar = () => {
             <Link to="/">
               <img
                 className="h-7  w-auto lg:h-full"
-                src={logo}
+                src="/assets/image1.png"
                 alt="OptiTrends logo"
               />
             </Link>
@@ -57,7 +55,7 @@ const Navbar = () => {
               <IoMdSearch className="absolute top-0 mt-3 ml-10 text-gray-400" />{" "}
             </div>
             <div className="hidden lg:flex items-center space-x-4 hover:cursor-pointer">
-              <img className="h-8" src={user} alt="User icon" />
+              <img className="h-8" src="/assets/user-check.png" alt="User icon" />
               <span>Hi.. Jay</span>
             </div>
 
@@ -66,7 +64,7 @@ const Navbar = () => {
               <Link to="/cart" className="relative">
                 <img
                   className="h-[25px] w-[25px]"
-                  src={cart_icon}
+                  src="/assets/shopping-cart.png"
                   alt="Cart icon"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white text-[8px] rounded-full px-1">

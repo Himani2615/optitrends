@@ -12,7 +12,7 @@ export const ProductCard = ({ product }) => {
             className="h-auto rounded-md object-center mt-5  mx-auto"
           />
           <img
-            src="src/assets/fav.png"
+            src="/assets/fav.png"
             className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 float-right"
           />
           <h2 className="text-center lg:mt-10 mt-3">{product.name}</h2>
