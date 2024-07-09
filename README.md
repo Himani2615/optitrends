@@ -2,26 +2,26 @@
 
 Welcome to Optitechs, an online store focused on selling eyewear products. This repository contains the code for the store, which is static and includes routing, with no other implementation. The web app was created using Tailwind CSS, Vite, and React.
 
-Table of Contents
+# Table of Contents
 
-    Features
-    Installation
-    Usage
-    Contributing
-    Acknowledgements
+  Features
+  Installation
+  Usage
+  Contributing
+  Acknowledgements
 
-Features
+# Features
 
-    Static online store web app
-    Routing between pages
-    Checkout process
-    Cart functionality
-    Shop page
-    Product details page
-    Designed in collaboration with a designer
-    Built with Tailwind CSS, Vite, and React
+   Static online store web app
+   Routing between pages
+   Checkout process
+   Cart functionality
+   Shop page
+   Product details page
+   Designed in collaboration with a designer
+   Built with Tailwind CSS, Vite, and React
 
-Installation
+# Installation
 
 To get started with the project, follow these steps:
 
@@ -38,21 +38,21 @@ To get started with the project, follow these steps:
     npm install
 
 
-Usage
+# Usage
 
   To run the project locally, use the following command:
 
     npm run dev
 
-This will start the development server, and you can view the app in your browser.
+  This will start the development server, and you can view the app in your browser.
 
 
-Contributing
+# Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or create a pull request.
 
 
-Acknowledgements
+# Acknowledgements
 
   Thanks to the designer who collaborated on this project. You can view the design on Figma <a href="https://www.figma.com/design/KVhXzE64Ag8UsTv7K8yhFG/Untitled?node-id=0-1&t=zwzh6tEIqJPq7CGp-0" target="_blank">here</a>.
   Special thanks to the HNG Internship program for this opportunity.
