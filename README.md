@@ -1,25 +1,25 @@
 # Optitechs: HNG 11 Stage 2 Task
 
-Welcome to Optitechs, an online store focused on selling eyewear products. This repository contains the code for the store, which is static and includes routing, with no other implementation. The web app was created using Tailwind CSS, Vite, and React.
+Welcome to Optitechs, an online store focused on selling eyewear products. This repository contains the code for the store, which is static and includes routing.
 
 # Table of Contents
 
-  Features
-  Installation
-  Usage
-  Contributing
-  Acknowledgements
+  •Features
+  •Installation
+  •Usage
+  •Contributing
+  •Acknowledgements
 
 # Features
 
-   Static online store web app
-   Routing between pages
-   Checkout process
-   Cart functionality
-   Shop page
-   Product details page
-   Designed in collaboration with a designer
-   Built with Tailwind CSS, Vite, and React
+   •Static online store web app
+   •Routing between pages
+   •Checkout process
+   •Cart functionality
+   •Shop page
+   •Product details page
+   •Designed in collaboration with a designer
+   •Built with Tailwind CSS, Vite, and React
 
 # Installation
 
