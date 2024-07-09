@@ -59,13 +59,15 @@ export const ProductDetails = () => {
   return (
     <div>
       <Navbar />
-      
-      <div className="flex flex-wrap h-[690px] items-center justify-evenly">
+
+      <div className="flex flex-wrap items-center justify-evenly">
         <div className="px-10">
-        <Link to="/"><p className="mb-20">←Back to Shop</p></Link>
-          <img src="src/assets/des.png"  />
+          <Link to="/">
+            <p className="mb-20">←Back to Shop</p>
+          </Link>
+          <img src="src/assets/des.png" />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col ml-3 lg:ml-0">
           <p>Brand:Elegant | Similar Product from Elegant</p>
           <h1 className="text-xl font-semibold">Modern Metal Frame</h1>
           <p className="mt-5 mb-2">
@@ -75,14 +77,18 @@ export const ProductDetails = () => {
           </p>
           <hr />
 
-
-          <label for="frame" className="mt-5">Lens Width and Frame Size</label>
-        <select id="frame" className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-[#2C3E50] focus:border-[#2C3E50] block lg:w-full p-2.5 h-14 w-4/5">
-        <option selected>Select Frame Size</option>
-        <option >28 mm</option>
-        <option >30 mm</option>
-        <option >32 mm</option>
-    </select>
+          <label for="frame" className="mt-5">
+            Lens Width and Frame Size
+          </label>
+          <select
+            id="frame"
+            className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-[#2C3E50] focus:border-[#2C3E50] block lg:w-full p-2.5 h-14 w-4/5"
+          >
+            <option selected>Select Frame Size</option>
+            <option>28 mm</option>
+            <option>30 mm</option>
+            <option>32 mm</option>
+          </select>
 
           <p className="my-5">Choose Color</p>
           <div className="grid grid-cols-4 gap-0.5">
@@ -92,22 +98,24 @@ export const ProductDetails = () => {
             <button className="w-10 h-10 bg-purple-600 rounded-full focus:opacity-30"></button>
           </div>
           <p className="text-xl font-bold mt-10">$80.00</p>
-          <Link to="/cart"><button
-            className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded w-56 h-10"
-            
-          >
-            Remove Item
-          </button></Link>
+          <Link to="/cart">
+            <button className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded w-56 h-10">
+              Remove Item
+            </button>
+          </Link>
         </div>
       </div>
 
-      <div className="mt-56 md:mt-56 lg:mt-0"><h1 className="text-lg font-bold ml-10 text-[#2C3E50]" >Recommended</h1></div>
-
+      <div className="mt-10">
+        <h1 className="text-lg font-bold ml-10 text-[#2C3E50]">Recommended</h1>
+      </div>
 
       <div className="container pt-10 ">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {products.map((product) => (
-            <Link to="/details"><ProductCard key={product.id} product={product} /></Link>
+            <Link to="/details">
+              <ProductCard key={product.id} product={product} />
+            </Link>
           ))}
         </div>
       </div>

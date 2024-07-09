@@ -7,27 +7,33 @@ export const ProductList = ({ product }) => {
     <div>
       <div className="flex justify-around mt-16">
         <div className="flex flex-col">
-          <img src={product.image} className="" />
-          <Link to="/"><button className="btn border-2 border-[#2C3E50] text-[#2C3E50] w-full rounded p-1 lg:p-3">
-            Remove Item
-          </button></Link>
+          <img src={product.image} className=" mx-auto" />
+          <Link to="/">
+            <button className="btn border-2 border-[#2C3E50] text-[#2C3E50] w-full rounded p-1 lg:p-3 lg:mt-0 mt-20">
+              Remove Item
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col text-sm">
-          <p className="sm:block hidden">Brand: Elegant | Similar product from Elegant</p>
-          <h1 className="text-lg font-semibold mt-1">{product.name}</h1>
+          <p className="sm:block hidden">
+            Brand: Elegant | Similar product from Elegant
+          </p>
+          <h1 className="text-lg font-semibold mt-1 ">{product.name}</h1>
           <div className="flex flex-wrap">
-            <p className="lg:mt-10 lg:mb-4 mb-1 mt-3">Size</p>
-            <p className="lg:ml-20 lg:mt-10 mt-3 lg:mb-1 mb-0.5 ml-2">Color</p>
+            <p className="lg:mt-10 lg:mb-4 mb-1 mt-3 text-sm">Size</p>
+            <p className="lg:ml-20 lg:mt-10 mt-3 lg:mb-1 mb-0.5 ml-2 text-sm">
+              Color
+            </p>
           </div>
           <div className="flex flex-wrap">
-            <p>28mm</p>
-            <div class="w-7 h-7 bg-black rounded-full  mb-2 lg:ml-16 ml-1"></div>
+            <p className="text-sm">28mm</p>
+            <div className="w-6 h-6 bg-black rounded-full  mb-2 lg:ml-16 ml-1"></div>
           </div>
         </div>
         <div className="flex flex-col font-bold text-xl items-center ">
           <p>${product.price}.00</p>
 
-          <CounterForm/>
+          <CounterForm />
         </div>
       </div>
 

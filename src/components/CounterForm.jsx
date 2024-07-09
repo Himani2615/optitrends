@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const CounterForm = () => {
   const [count, setCount] = useState(1);
@@ -19,10 +19,10 @@ const CounterForm = () => {
         <button
           type="button"
           onClick={decrement}
-          className="flex-shrink-0 bg-[#BEC3C9] inline-flex text-white items-center justify-center border border-gray-300 rounded-md h-10 w-10 focus:ring-gray-100 focus:ring-2 focus:outline-none"
+          className="flex-shrink-0 bg-[#BEC3C9] inline-flex text-white items-center justify-center border border-gray-300 rounded-md h-5 md:h-9 lg:h-9 w-5 md:w-9 lg:w-9 focus:ring-gray-100 focus:ring-2 focus:outline-none"
         >
           <svg
-            className="w-5 h-5 "
+            className="w-3 h-3 "
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,7 +40,7 @@ const CounterForm = () => {
         <input
           type="text"
           id="counter-input"
-          className="flex-shrink-0 text-gray-900 border-0 bg-gray-100 h-10 text-sm text-lg focus:outline-none focus:ring-0 max-w-[5rem] text-center"
+          className="flex-shrink-0 text-gray-900 border-0  h-5 lg:h-9 md:h-9 text-sm text-lg focus:outline-none focus:ring-0 max-w-[4rem] text-center"
           placeholder=""
           value={count}
           readOnly
@@ -49,8 +49,7 @@ const CounterForm = () => {
         <button
           type="button"
           onClick={increment}
-          className="flex-shrink-0 bg-[#BEC3C9] inline-flex text-white items-center justify-center border border-gray-300 rounded-md h-10 w-10 focus:ring-gray-100 focus:ring-2 focus:outline-none"
-          
+          className="flex-shrink-0 bg-[#BEC3C9] inline-flex text-white items-center justify-center border border-gray-300 rounded-md h-5 md:h-9 lg:h-9 w-5 md:w-9 lg:w-9 focus:ring-gray-100 focus:ring-2 focus:outline-none"
         >
           <svg
             className="w-5 h-5 "

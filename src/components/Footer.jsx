@@ -4,7 +4,6 @@ import insta_icon from "../assets/ig_icon.png";
 import nintendo_icon from "../assets/nintendo_icon.png";
 import twitter_icon from "../assets/twitter_icon.png";
 
-
 const Footer = () => {
   return (
     <div>
@@ -125,16 +124,16 @@ const Footer = () => {
                 <h5>Social Media Links</h5>
                 <div className="flex justify-center lg:justify-start mt-4 space-x-4">
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={fb_icon}/>
+                    <img src={fb_icon} />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={insta_icon}/>
+                    <img src={insta_icon} />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={nintendo_icon}/>
+                    <img src={nintendo_icon} />
                   </a>
                   <a href="" className="text-gray-500 hover:text-gray-900">
-                    <img src={twitter_icon }/>
+                    <img src={twitter_icon} />
                   </a>
                 </div>
               </div>

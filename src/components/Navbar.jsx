@@ -18,7 +18,13 @@ const Navbar = () => {
       <div className="max-w-8xl mx-auto lg:mx-5 px-4 sm:px-6 lg:px-8 lg:py-5">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/"><img className="h-7  w-auto lg:h-full" src={logo} alt="OptiTrends logo" /></Link>
+            <Link to="/">
+              <img
+                className="h-7  w-auto lg:h-full"
+                src={logo}
+                alt="OptiTrends logo"
+              />
+            </Link>
           </div>
           <div className="hidden lg:flex lg:space-x-8">
             <Link
@@ -41,7 +47,6 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            
             <div className="relative text-gray-600 hidden lg:block pr-[180px]">
               <input
                 type="search"
@@ -49,12 +54,13 @@ const Navbar = () => {
                 placeholder="Search for anything..."
                 className="bg-white h-10 px-20 rounded text-sm focus:outline-none border-2 focus:border-[#2C3E50]"
               />
-              <IoMdSearch className="absolute top-0 mt-3 ml-10 text-gray-400" /> </div>
+              <IoMdSearch className="absolute top-0 mt-3 ml-10 text-gray-400" />{" "}
+            </div>
             <div className="hidden lg:flex items-center space-x-4 hover:cursor-pointer">
               <img className="h-8" src={user} alt="User icon" />
               <span>Hi.. Jay</span>
             </div>
-            
+
             <div className="flex items-center space-x-2">
               <CiSearch className="lg:hidden h-[25px] w-[25px] hover:cursor-pointer" />
               <Link to="/cart" className="relative">
