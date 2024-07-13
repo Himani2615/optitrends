@@ -5,12 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   
   plugins: [react()],
-  define: {
-    "process.env": process.env,
-    VITE_API_KEY:process.env.VITE_API_KEY,
-    VITE_ORGANIZATION_ID:process.env.VITE_ORGANIZATION_KEY,
-    VITE_APPID:process.env.VITE_APPID
-  },
   server: {
     proxy: {
       "/api": {
@@ -20,4 +14,9 @@ export default defineConfig({
       },
     },
   },
+  define: {
+    'process.env.VITE_ORGANIZATION_ID': JSON.stringify(process.env.VITE_ORGANIZATION_ID),
+    'process.env.VITE_APPID': JSON.stringify(process.env.VITE_APPID),
+    'process.env.VITE_API_KEY': JSON.stringify(process.env.VITE_API_KEY),
+  }
 });
