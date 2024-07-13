@@ -5,9 +5,11 @@ import ProductList from "../components/ProductList";
 import { Link } from "react-router-dom";
 import { useCart } from "../CartContent";
 
+
 export const Checkout1 = () => {
   const { cart,removeFromCart } = useCart(); 
   const subtotal = cart.reduce((acc, product) => acc + product.current_price[0].AUD[0] * product.quantity, 0);
+
 
   return (
     <div>
