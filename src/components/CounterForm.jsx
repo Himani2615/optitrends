@@ -1,17 +1,8 @@
 import React, { useState } from "react";
+import { useCart } from "../CartContent";
 
-const CounterForm = () => {
-  const [count, setCount] = useState(1);
+const CounterForm = ({count,increment,decrement}) => {
 
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const decrement = () => {
-    if (count > 1) {
-      setCount(count - 1);
-    }
-  };
 
   return (
     <form className="max-w-xs mx-auto my-auto ">

@@ -1,78 +1,60 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProductCard from "../components/ProductCard";
 import { Link } from "react-router-dom";
+import ProductsGrid from "../components/ProductGrid";
+import { useCart } from "../CartContent";
 
 export const ProductDetails = () => {
-  const products = [
-    {
-      id: 1,
-      name: "Retro Round Frame",
-      price: 65,
-      image: "/assets/retro.png",
-    },
-    {
-      id: 2,
-      name: "Sleek Titanium Frame",
-      price: 50,
-      image: "/assets/sleek.png",
-    },
-    {
-      id: 3,
-      name: "Sophisticated Rimlesss",
-      price: 90,
-      image: "/assets/rimless.png",
-    },
-    {
-      id: 4,
-      name: "Modern Metal Frame",
-      price: 80,
-      image: "/assets/modern.png",
-    },
-    {
-      id: 5,
-      name: "Sophisticated Rimlesss",
-      price: 90,
-      image: "/assets/rimless.png",
-    },
-    {
-      id: 6,
-      name: "Trendy Tortoise Shell",
-      price: 85,
-      image: "/assets/trendy.png",
-    },
-    {
-      id: 7,
-      name: "Modern Metal Frame",
-      price: 80,
-      image: "/assets/modern.png",
-    },
-    {
-      id: 8,
-      name: "Classic Black Frame",
-      price: 50,
-      image: "/assets/classic.png",
-    },
-  ];
 
-  return (
+  const {addToCart,removeFromCart} =useCart();
+
+  const [product, setProduct] = useState(null);
+  const {product_id} = useParams();
+  const [isInCart, setIsInCart] = useState(false);
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    setIsInCart(true);
+  };
+
+  const handleRemoveFromCart = () => {
+    removeFromCart(product.id);
+    setIsInCart(false);
+  };
+
+
+  useEffect(() => {
+         fetch(`api/products/${product_id}?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${import.meta.env.VITE_APPID}&Apikey=${import.meta.env.VITE_API_KEY}`)
+        .then(response => response.json())
+      .then(data => setProduct(data));
+  }, [product_id]);
+
+  if (!product) {
+    return <div>Loading..</div>;
+  }
+
+  
+ 
+ return (
     <div>
       <Navbar />
 
-      <div className="flex flex-wrap items-center justify-evenly mt-2">
-        <div className="lg:px-10">
-          <Link to="/">
-            <p className="mb-20">←Back to Shop</p>
+      <Link to="/">
+            <p className="mb-20 md:pl-20 lg:pl-56 mt-3">←Back to Shop</p>
           </Link>
-          <img src="/assets/des.png" className="w-4/5 mx-auto"/>
-        </div>
-        <div className="flex flex-col ml-3 lg:ml-0 lg:mt-20 text-[#121A21]">
+
+      <div className="flex flex-wrap items-center justify-evenly">
+          
+      <img src={`api/images/${product.photos[0].url}`}  className=" md:w-56 lg:w-96 "/>
+       
+        <div className="flex flex-col  text-[#121A21]">
           <p>Brand:Elegant | Similar Product from Elegant</p>
-          <h1 className="text-xl font-semibold">Modern Metal Frame</h1>
+          <h1 className="text-xl font-semibold">{product.name}</h1>
           <p className="mt-5 mb-2">
             Description: Experience ultimate comfort and durability
-            <br /> with the Sleek Titanium Frame, known for its lightweight
+            <br /> with the {product.name}, known for its lightweight
             <br /> construction and premium feel.
           </p>
           <hr />
@@ -97,12 +79,24 @@ export const ProductDetails = () => {
             <button className="w-10 h-10 bg-red-600 rounded-full focus:opacity-30"></button>
             <button className="w-10 h-10 bg-purple-600 rounded-full focus:opacity-30"></button>
           </div>
-          <p className="text-xl font-bold mt-10">$80.00</p>
-          <Link to="/cart">
-            <button className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded lg:w-56 h-10 w-80 mx-auto">
-              Remove Item
-            </button>
-          </Link>
+          <p className="text-xl font-bold mt-10">$60.00</p>
+          
+            
+            {isInCart ? (
+          <button
+            onClick={handleRemoveFromCart}
+            className="btn mt-10 border-2 border-[#2C3E50] text-[#2C3E50] rounded lg:w-56 h-10 w-80 "
+          >
+            Remove Item
+          </button>
+        ) : (
+          <button
+            onClick={handleAddToCart}
+            className="btn mt-10 border-2 border-[#2C3E50] text-white bg-[#2C3E50] rounded lg:w-56 h-10 w-80"
+          >
+            Add to Cart
+          </button>
+        )}
         </div>
       </div>
 
@@ -111,13 +105,7 @@ export const ProductDetails = () => {
       </div>
 
       <div className="container pt-10 ">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
-          {products.map((product) => (
-            <Link to="/details">
-              <ProductCard key={product.id} product={product} />
-            </Link>
-          ))}
-        </div>
+        <ProductsGrid/>
       </div>
       <Footer />
     </div>

@@ -3,28 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductList from "../components/ProductList";
 import { Link } from "react-router-dom";
+import { useCart } from "../CartContent";
 
 export const Checkout1 = () => {
-  const products = [
-    {
-      id: 1,
-      name: "Modern Metal Frame",
-      price: 80,
-      image: "/assets/modern.png",
-    },
-    {
-      id: 2,
-      name: "Retro Round Frame",
-      price: 65,
-      image: "/assets/retro.png",
-    },
-    {
-      id: 3,
-      name: "Sophisticated Rimless",
-      price: 90,
-      image: "/assets/rimless.png",
-    },
-  ];
+  const { cart,removeFromCart } = useCart(); 
+  const subtotal = cart.reduce((acc, product) => acc + product.current_price[0].AUD[0] * product.quantity, 0);
 
   return (
     <div>
@@ -43,8 +26,8 @@ export const Checkout1 = () => {
         </p>
       </div>
 
-      {products.map((product) => (
-        <ProductList key={product.id} product={product} />
+      {cart.map((product) => (
+        <ProductList key={product.id} product={product}/>
       ))}
 
       <hr className="w-5/6 mx-auto h-5" />
@@ -63,7 +46,7 @@ export const Checkout1 = () => {
         <hr />
         <div className="flex flex-wrap relative text-[#2C3E50]">
           <p className=" mt-5">Subtotal</p>
-          <p className="mt-5 absolute right-0 ">$271.00</p>
+          <p className="mt-5 absolute right-0 ">${(subtotal + 29 + 7).toFixed(2)}</p>
         </div>
       </div>
       <Link to="/shipping">

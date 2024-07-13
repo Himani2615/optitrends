@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdSearch, IoMdMenu } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
-
+import { useCart } from "../CartContent";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cart } = useCart();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const getItemCount = () => {
+    return cart.reduce((count, product) => count + product.quantity, 0);
+  };
+
 
   return (
     <nav className="bg-[#FDFEFE]">
@@ -45,7 +51,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <div className="relative text-gray-600 hidden lg:block pr-[180px]">
+            <div className="relative text-gray-600 hidden xl:block pr-[180px]">
               <input
                 type="search"
                 name="search"
@@ -68,7 +74,7 @@ const Navbar = () => {
                   alt="Cart icon"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white text-[8px] rounded-full px-1">
-                  3
+                {getItemCount()}
                 </span>
               </Link>
               <Link to="/cart">
