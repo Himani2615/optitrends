@@ -47,8 +47,8 @@ export const ProductDetails = () => {
 
       <div className="flex flex-wrap items-center justify-evenly">
           
-      <img src={`api/images/${product.photos[0].url}`}  className=" md:w-56 lg:w-96 "/>
-       
+      <img src={`https://api.timbu.cloud/images/${product?.photos[0]?.url}`}  className=" md:w-56 lg:w-96 "/>
+             
         <div className="flex flex-col  text-[#121A21]">
           <p>Brand:Elegant | Similar Product from Elegant</p>
           <h1 className="text-xl font-semibold">{product.name}</h1>
