@@ -22,7 +22,7 @@ export const ProductCard = ({ product }) => {
     setIsFavorite(!isFavorite);
   };
 
-  const imageUrl =  `api/images/${product.photos[0].url}`;
+  const imageUrl =  `https://api.timbu.cloud/images/${product?.photos[0]?.url}`;
   const price = product.current_price[0].AUD[0];
 
 
