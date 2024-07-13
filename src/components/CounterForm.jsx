@@ -31,7 +31,7 @@ const CounterForm = ({count,increment,decrement}) => {
         <input
           type="text"
           id="counter-input"
-          className="flex-shrink-0 text-gray-900 border-0  h-5 lg:h-9 md:h-9 my-auto text-lg focus:outline-none focus:ring-0 max-w-[3.5 rem] text-center"
+          className="flex-shrink-0 text-gray-900 border-0  h-5 lg:h-9 md:h-9 my-auto text-lg focus:outline-none focus:ring-0 max-w-[3.5rem] text-center"
           placeholder=""
           value={count}
           readOnly
