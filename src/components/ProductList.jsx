@@ -5,7 +5,7 @@ import { useCart } from "../CartContent";
 export const ProductList = ({ product }) => {
 
   const { updateCart,removeFromCart } = useCart();
-  const imageUrl =  `api/images/${product.photos[0].url}`;
+  const imageUrl =  `https://api.timbu.cloud/images/${product?.photos[0]?.url}`;
   const price = product.current_price[0].AUD[0];
   const [count, setCount] = useState(product.quantity || 1);
 
