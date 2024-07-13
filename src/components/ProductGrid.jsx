@@ -6,7 +6,7 @@ const ProductsGrid = () => {
 
 
   useEffect(() => {
-    fetch(`api/products?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${import.meta.env.VITE_APPID}&Apikey=${import.meta.env.VITE_API_KEY}`)
+    fetch(`https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${import.meta.env.VITE_APPID}&Apikey=${import.meta.env.VITE_API_KEY}`)
       .then(response => response.json())
       .then(data => {
         setProducts(data.items);

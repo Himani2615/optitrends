@@ -26,7 +26,7 @@ export const ProductDetails = () => {
 
 
   useEffect(() => {
-         fetch(`api/products/${product_id}?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${import.meta.env.VITE_APPID}&Apikey=${import.meta.env.VITE_API_KEY}`)
+         fetch(`https://timbu-get-single-product.reavdev.workers.dev/${product_id}?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${import.meta.env.VITE_APPID}&Apikey=${import.meta.env.VITE_API_KEY}`)
         .then(response => response.json())
       .then(data => setProduct(data));
   }, [product_id]);
