@@ -2,6 +2,8 @@
 
 Welcome to Optitrends, an online store focused on selling eyewear products. This repository contains the code for the store which integrates the Timbu Cloud API for dynamic product data. It is built using Tailwind CSS, Vite, and React
 
+![Screenshot (301)](https://github.com/user-attachments/assets/a00d650d-7fdb-45c7-baa1-2f8ac279249a)
+
 
 # Features
 
@@ -15,8 +17,6 @@ Welcome to Optitrends, an online store focused on selling eyewear products. This
    
    •Shop page
    
-   •Product details page
-
    •Product details page with image gallery and navigation
    
    •Designed in collaboration with a designer
