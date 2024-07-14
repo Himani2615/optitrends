@@ -8,7 +8,7 @@ import { useCart } from "../CartContent";
 export const Cart = () => {
 
   const [total, setTotal] = useState(0);
-  const { cart, removeFromCart,setCart } = useCart();
+  const { cart, removeFromCart,clearCart } = useCart();
 
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export const Cart = () => {
         <h1 className="text-xl font-bold text-[#121A21]">Cart</h1>
 
         
-          <button onClick={() => setCart([])} className="btn lg:border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20 lg:font-normal font-semibold">
+          <button onClick={() => clearCart([])} className="btn lg:border border-[#2C3E50] text-[#2C3E50] rounded-lg lg:w-36 h-10 w-20 lg:font-normal font-semibold">
             Clear All
           </button>
         

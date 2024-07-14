@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import ProductsGrid from "../components/ProductGrid";
 import { useCart } from "../CartContent";
+import ImageGallery from "../components/ImageGallery";
 
 export const ProductDetails = () => {
 
@@ -15,12 +16,12 @@ export const ProductDetails = () => {
   const [isInCart, setIsInCart] = useState(false);
 
   const handleAddToCart = () => {
-    addToCart(product);
+    
     setIsInCart(true);
   };
 
   const handleRemoveFromCart = () => {
-    removeFromCart(product.id);
+    
     setIsInCart(false);
   };
 
@@ -35,7 +36,8 @@ export const ProductDetails = () => {
     return <div>Loading..</div>;
   }
 
-  
+  const imageUrls = product.photos.map(photo => `https://api.timbu.cloud/images/${photo.url}`);
+
  
  return (
     <div>
@@ -46,16 +48,16 @@ export const ProductDetails = () => {
           </Link>
 
       <div className="flex flex-wrap items-center justify-evenly">
+      <ImageGallery images={imageUrls} />
           
-      <img src={`https://api.timbu.cloud/images/${product?.photos[0]?.url}`}  className=" md:w-56 lg:w-96 "/>
              
         <div className="flex flex-col  text-[#121A21]">
           <p>Brand:Elegant | Similar Product from Elegant</p>
           <h1 className="text-xl font-semibold">{product.name}</h1>
-          <p className="mt-5 mb-2">
+          <p className="mt-5 mb-2 w-80">
             Description: Experience ultimate comfort and durability
-            <br /> with the {product.name}, known for its lightweight
-            <br /> construction and premium feel.
+             with the {product.name}, known for its lightweight
+             construction and premium feel.
           </p>
           <hr />
 
