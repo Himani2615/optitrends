@@ -13,7 +13,7 @@ const ImageGallery = ({ images }) => {
 
   return (
     <div className="relative w-56 lg:w-96 overflow-hidden">
-      <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 z-10">
+      <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 text-black bg-gray-100 opacity-50 px-1 z-10 text-2xl">
         ‹
       </button>
       <div className="relative">
@@ -26,7 +26,7 @@ const ImageGallery = ({ images }) => {
           ))}
         </div>
       </div>
-      <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 z-10">
+      <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-100 opacity-50 text-black text-2xl px-1 z-10">
         ›
       </button>
     </div>
