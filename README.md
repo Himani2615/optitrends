@@ -1,24 +1,13 @@
 # Optitechs: HNG 11 Stage 2 Task
 
-Welcome to Optitechs, an online store focused on selling eyewear products. This repository contains the code for the store, which is static and includes routing.
+Welcome to Optitrends, an online store focused on selling eyewear products. This repository contains the code for the store which integrates the Timbu Cloud API for dynamic product data. It is built using Tailwind CSS, Vite, and React
 
-# Table of Contents
-
-  •Features
-  
-  •Installation
-  
-  •Usage
-  
-  •Contributing
-  
-  •Acknowledgements
 
 # Features
 
-   •Static online store web app
+   •Online store web app
    
-   •Routing between pages
+   •Dynamic product data using Timbu Cloud API
    
    •Checkout process
    
@@ -27,10 +16,11 @@ Welcome to Optitechs, an online store focused on selling eyewear products. This 
    •Shop page
    
    •Product details page
+
+   •Product details page with image gallery and navigation
    
    •Designed in collaboration with a designer
-   
-   •Built with Tailwind CSS, Vite, and React
+
 
 # Installation
 
@@ -56,6 +46,16 @@ To get started with the project, follow these steps:
     npm run dev
 
   This will start the development server, and you can view the app in your browser.
+
+  # Environment Variables
+
+   To securely use the Timbu Cloud API, set up environment variables.You can get your own keys at <a href="https://timbu.cloud/">Timbu Cloud</a>. Create a .env file in the root of your project and add the following:
+
+    VITE_ORGANIZATION_ID=your_organization_id
+    VITE_APPID=your_app_id
+    VITE_API_KEY=your_api_key
+
+  These variables will be used in your API requests to fetch product data.
 
 
 # Contributing
